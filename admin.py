@@ -19,4 +19,4 @@ class Admin(Person):
 
     def short_string(self) -> str:
         """function to return admin name as string"""
-        return f"Admint name {self.name}"
+        return f"Admin name {self.name}"
