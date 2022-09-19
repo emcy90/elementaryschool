@@ -18,3 +18,18 @@ class Student(Person):
     def short_string(self) -> str:
         """function to return student-name as string"""
         return f"Student name {self.name}"
+
+    def show_schedule(self):
+        pass
+
+    def show_busses(self):
+        pass
+
+    def show_classroom(self):
+        pass
+
+    def show_course(self):
+        pass
+
+    def show_grade(self):
+        pass
