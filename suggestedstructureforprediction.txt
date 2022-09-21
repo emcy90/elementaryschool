@@ -1,0 +1,5 @@
+Suggest a structure of data about each student that you would like to collect so you monitor and predict future career domains ( hand Workers , intrapreneur , medical segment, administration).
+
+Data for courses in student-class clearly will be in form of list and same for grade so that it easily can be matched up. 
+Data we would like to collect is grade for each course and assuming that student does really well in swedish and english they probably should be recommended for administration. 
+if they get good grades in biology, physics and chemistry and math they probably would do well in medical segment. If they only get good grades in handcraft they clearly should focus on handwork and so forth. 
