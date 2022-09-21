@@ -16,10 +16,3 @@ class Teacher(Person):
     def short_string(self) -> str:
         """function to return teacher-name as string"""
         return f"Teacher name {self.name}"
-
-
-
-
-
-
-
