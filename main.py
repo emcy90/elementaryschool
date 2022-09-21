@@ -27,15 +27,22 @@ def create_courses():
     english = Course("2h/week", "english", "teach english", "A->F")
     handcraft = Course("2h/week", "handcraft", "teach handcraft", "A->F")
     music = Course("1h/week", "music", "teach music", "A->F")
-    natureoriented = Course("2h/week", "nature-oriented", "teach biology, math"
+    nature_oriented = Course("2h/week", "nature-oriented", "teach biology"
                                                           ", physics and chemistry", "A->F")
-    societyoriented = Course("2h/week", "society-oriented", "teach history, religion"
+    society_oriented = Course("2h/week", "society-oriented", "teach history, religion"
                                                             ", society, geography", "A->F")
     swedish = Course("4h/week", "swedish", "teach about swedish including grammar", "A->F")
     math = Course("4h/week", "mathmatics", "teach mathmatics", "A-F")
     """by using slots we have saved 18% memory on the course-class instance"""
-    print(sys.getsizeof(art))
-    print(sys.getsizeof(Course))
+    print("Art", sys.getsizeof(art))
+    print("English", sys.getsizeof(english))
+    print("Handcraft", sys.getsizeof(handcraft))
+    print("Music", sys.getsizeof(music))
+    print("Nature-oriented", sys.getsizeof(nature_oriented))
+    print("Society-oriented", sys.getsizeof(society_oriented))
+    print("Swedish", sys.getsizeof(swedish))
+    print("Math", sys.getsizeof(math))
+    print("Class course", sys.getsizeof(Course))
 
 
 # Press the green button in the gutter to run the script.
