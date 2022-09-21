@@ -20,16 +20,21 @@ class Student(Person):
         return f"Student name {self.name}"
 
     def show_schedule(self):
-        pass
+        """function to return student-buss as string"""
+        return f"Student schedule {self.schedule}"
 
     def show_busses(self):
-        pass
+        """function to return student-name as string"""
+        return f"Student busses {self.busses}"
 
     def show_classroom(self):
-        pass
+        """function to return student-busses as string"""
+        return f"Student classroom {self.classroom}"
 
     def show_course(self):
-        pass
+        """function to return student-course as string"""
+        return f"Student course {self.course}"
 
     def show_grade(self):
-        pass
+        """function to return student-grade as string"""
+        return f"Student grade {self.grade}"
