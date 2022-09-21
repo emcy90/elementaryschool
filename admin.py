@@ -6,7 +6,6 @@ from person import Person
 class Admin(Person):
     """Have following attributes
     working hours
-    ...
     """
     def __init__(self, person_id, name, birthday, work_hours):
         super().__init__(
