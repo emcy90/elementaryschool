@@ -1,3 +1,4 @@
+"""teacher-class that inherit attributes for person"""
 from person import Person
 
 
@@ -7,7 +8,7 @@ class Teacher(Person):
     """
     def __init__(self, person_id, name, birthday, work_hours, course):
         super().__init__(person_id=person_id, name=name, birthday=birthday)
-        self.Course = course
+        self.course = course
         self.work_hours = work_hours
 
     def __str__(self):

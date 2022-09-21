@@ -1,3 +1,4 @@
+"""python class person that student-class, teacher-class, admin-class"""
 from dataclasses import dataclass
 from typing import Optional
 from course import Course

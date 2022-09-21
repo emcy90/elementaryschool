@@ -1,3 +1,7 @@
+"""main-file that creates the various objects needed for the project
+ such as teacher, student, admin and courses
+ developed using python-version 3.10"""
+
 import sys
 import time
 import memory_profiler
@@ -27,6 +31,7 @@ print(f'Execution time for old fashion = {modern_fun_exe_time}')
 
 @memory_profiler.profile
 def create_courses():
+    """function for creating the objects for the various courses"""
     art = Course("1h/week", "art", "teach how to do art", "A->F")
     english = Course("2h/week", "english", "teach english", "A->F")
     handcraft = Course("2h/week", "handcraft", "teach handcraft", "A->F")
@@ -37,7 +42,7 @@ def create_courses():
                                                             ", society, geography", "A->F")
     swedish = Course("4h/week", "swedish", "teach about swedish including grammar", "A->F")
     math = Course("4h/week", "mathmatics", "teach mathmatics", "A-F")
-    """by using slots we have saved 18% memory on the course-class instance"""
+    # by using slots we have saved 18% memory on the course-class instance
     print("Art", sys.getsizeof(art))
     print("English", sys.getsizeof(english))
     print("Handcraft", sys.getsizeof(handcraft))
@@ -51,6 +56,7 @@ def create_courses():
 
 @memory_profiler.profile
 def create_people():
+    """function to create objects of students, teachers, admin"""
     no1 = Teacher(1, 'Ford Prefect', '880211', 4, 'art')
     no2 = Student(
         2,
