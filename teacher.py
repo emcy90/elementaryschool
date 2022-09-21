@@ -1,9 +1,11 @@
-import person
+from person import Person
 
 
-class Teacher(person):
-
-    def __init__(self, person_id, name, birthday, course, work_hours):
+class Teacher(Person):
+    """
+    have following attributes from person and course
+    """
+    def __init__(self, person_id, name, birthday, work_hours, course):
         super().__init__(person_id=person_id, name=name, birthday=birthday)
         self.Course = course
         self.work_hours = work_hours
@@ -16,12 +18,6 @@ class Teacher(person):
         return f"Teacher name {self.name}"
 
 
-def working_hours():
-    pass
-
-
-def class_time():
-    pass
 
 
 

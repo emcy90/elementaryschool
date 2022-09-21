@@ -1,18 +1,20 @@
-"""
-Class for persons at school which includes but not limited to teachers, administrators and students
-"""
+from abc import ABC, abstractmethod
+from dataclasses import dataclass
+from typing import Optional
+from course import Course
 
 
+@dataclass
 class Person:
-    """class with attributes person_id and name and birthday which is shared by all"""
-    def __init__(self, person_id, name, birthday):
-        self.person_id = person_id
-        self.name = name
-        self.birthday = birthday
+    """Person at the elementary school."""
 
-    def __str__(self):
-        return self.short_string()
+    name: str
+    person_id: int
+    birthday: str
+    course: Optional[Course] = None
 
-    def short_string(self) -> str:
-        """function to return a short string containing info about name"""
-        return f"Person {self.name}"
+    def courses(self) -> str:
+        """which person is specific course."""
+        witch_course = self.course.get_course()
+        if self.course is not None:
+            return witch_course

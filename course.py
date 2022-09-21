@@ -22,6 +22,9 @@ class Course:
     def __str__(self):
         return self.short_string()
 
+    def get_course(self) -> str:
+        """Returns which course"""
+
     def short_string(self) -> str:
         """function to return course-name as string"""
         return f"Course name {self.course_name}"
