@@ -12,6 +12,4 @@ def test_func():
     return addition
 
 
-
-
 test_func()
