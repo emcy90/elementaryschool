@@ -1,14 +1,15 @@
 """
-a collection of classes that inherit base attributes from subject-class
+class for all objects that are courses at the school
 """
 
 
 class Course:
     """
-    subject class that all other subject at the school can inherit
-    attributes from which are subject_time and subject_name
-    as all subjects require that
+    course class and each course is an object of the class. Entire
+     class-structure for the courses should be in slot as they are not edited
     """
+    __slots__ = ('course_time', 'course_name', 'course_plan', 'course_grading')
+
     def __init__(self, course_time, course_name, course_plan, course_grading):
         self.course_time = course_time
         self.course_name = course_name
@@ -23,6 +24,7 @@ class Course:
 
     def get_course(self) -> str:
         """Returns which course"""
+        return self.course_name
 
     def short_string(self) -> str:
         """function to return course-name as string"""

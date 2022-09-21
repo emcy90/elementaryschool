@@ -1,4 +1,7 @@
+import sys
 import time
+import pympler
+from course import Course
 
 
 def clock(n):
@@ -19,13 +22,24 @@ modern_fun_exe_time = t_clock_end - t_clock_start
 print(f'Execution time for old fashion = {modern_fun_exe_time}')
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+def create_courses():
+    art = Course("1h/week", "art", "teach how to do art", "A->F")
+    english = Course("2h/week", "english", "teach english", "A->F")
+    handcraft = Course("2h/week", "handcraft", "teach handcraft", "A->F")
+    music = Course("1h/week", "music", "teach music", "A->F")
+    natureoriented = Course("2h/week", "nature-oriented", "teach biology, math"
+                                                          ", physics and chemistry", "A->F")
+    societyoriented = Course("2h/week", "society-oriented", "teach history, religion"
+                                                            ", society, geography", "A->F")
+    swedish = Course("4h/week", "swedish", "teach about swedish including grammar", "A->F")
+    math = Course("4h/week", "mathmatics", "teach mathmatics", "A-F")
+    """by using slots we have saved 18% memory on the course-class instance"""
+    print(sys.getsizeof(art))
+    print(sys.getsizeof(Course))
 
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    create_courses()
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
